@@ -11,5 +11,5 @@
 * [탐욕법 알고리즘](https://github.com/golgol0/Algorithm/tree/main/greedy)
 * [동적계획법 알고리즘](https://github.com/golgol0/Algorithm/tree/main/DP)
 * [깊이/너비 우선 탐색 알고리즘](https://github.com/golgol0/Algorithm/tree/main/DFS_BFS)
-* [이분탐색](https://github.com/golgol0/golgol0/Algorithm/tree/main/binary_Search)
+* [이분탐색 알고리즘](https://github.com/golgol0/golgol0/Algorithm/tree/main/binary_Search)
 * [그래프 알고리즘](https://github.com/golgol0/Algorithm/tree/main/graph)
