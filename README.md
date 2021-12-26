@@ -7,7 +7,7 @@
 * [스택/큐 알고리즘](https://github.com/golgol0/Algorithm/tree/main/stack_queue)
 * [힙 알고리즘](https://github.com/golgol0/Algorithm/tree/main/heap)
 * [정렬 알고리즘](https://github.com/golgol0/Algorithm/tree/main/sort)
-* [완전탐색 알고리즘](https://github.com/golgol0/Algorithm/tree/main/BP)
+* [완전탐색 알고리즘](https://github.com/golgol0/Algorithm/tree/main/BF)
 * [탐욕법 알고리즘](https://github.com/golgol0/Algorithm/tree/main/greedy)
 * [동적계획법 알고리즘](https://github.com/golgol0/Algorithm/tree/main/DP)
 * [깊이/너비 우선 탐색 알고리즘](https://github.com/golgol0/Algorithm/tree/main/DFS_BFS)
