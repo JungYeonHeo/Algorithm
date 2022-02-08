@@ -14,3 +14,5 @@
 * [이분탐색 알고리즘](https://github.com/golgol0/Algorithm/tree/main/binary_Search)
 * [그래프 알고리즘](https://github.com/golgol0/Algorithm/tree/main/graph)
 * [진법/비트연산 알고리즘](https://github.com/golgol0/Algorithm/tree/main/bit)
+* [재귀 알고리즘](https://github.com/golgol0/Algorithm/tree/main/recursion)
+* [다익스트라 알고리즘](https://github.com/golgol0/Algorithm/tree/main/dijkstra)
