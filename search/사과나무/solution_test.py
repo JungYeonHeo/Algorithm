@@ -5,14 +5,14 @@ import sys
 n = int(input())
 a = [list(map(int, input().split())) for _ in range(n)]
 res = 0
-s = e = n // 2
+s = e = n // 2 # 중간값에서 시작
 for i in range(n):
     for j in range(s, e+1):
         res += a[i][j]
-    if i < n//2:
-        s -= 1
-        e += 1
-    else:
+    if i < n//2: # 다이아몬드에서 넓어지는 구간
+        s -= 1 # 시작값은 1감소 
+        e += 1 # 끝값은 1증가 
+    else: # 다이아몬든에서 좁혀지는 구간
         s += 1
         e -= 1
 print(res)
