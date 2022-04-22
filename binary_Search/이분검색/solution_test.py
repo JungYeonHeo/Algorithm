@@ -7,11 +7,11 @@ import sys
 sys.stdin = open("input.txt", "r")
 n, m = map(int, input().split())
 a = list(map(int, input().split()))
-a.sort()
+a.sort() # 오름차순 정렬(이분 검색은 정렬되어 있어야 함)
 lt = 0
 rt = n - 1
 while lt <= rt:
-    mid = (lt + rt) // 2
+    mid = (lt + rt) // 2 # 중간 index
     if a[mid] == m:
         print(mid + 1)
         break
