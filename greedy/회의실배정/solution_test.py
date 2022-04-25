@@ -1,15 +1,33 @@
+"""
+문제: 한 개의 회의실이 있는데, 이를 사용하고자 하는 n개의 회의들에 대하여 회의실 사용표를 만들려고 한다.
+각 회의에 대해 시작시간과 끝나는 시간이 주어져 있고, 
+각 회의가 겹치지 않게 하면서 회의실을 사용할 수 있는 최대수의 회의를 출력
+단, 회의는 한 번 시작하면 중간에 중간될 수 없으며, 한 회의가 끝나는 것과 동시에 다음 회의가 시작될 수 있다.
+
+첫째 줄에 회의의 수 n이 주어진다. 
+둘째 줄부터 n+1 줄까지 각 회의의 정보가 주어지는데 이것은 공백을 사이에 두고 회의의 시작시간과 끝나는 시간이 주어진다.
+
+5
+1 4
+2 3
+3 5
+4 6
+5 7
+"""
+
+# 그리디 알고리즘 => 대부분 정렬과 같이 사용
 import sys
-sys.stdin = open("input.txt", "r")
+# sys.stdin = open("input.txt", "r")
 n = int(input())
 meeting = []
 for i in range(n):
-    a, b = map(int, input().split())
-    meeting.append((a, b))
-meeting.sort(key=lambda x : (x[1], x[0]))
-et = 0
-cnt = 0
-for x, y in meeting:
-    if x >= et:
-        et = y
+    s, e = map(int, input().split())
+    meeting.append((s, e)) # 튜플 형태로 리스트에 삽입
+meeting.sort(key=lambda x : (x[1], x[0])) # 회의가 끝나는 시간(x[1])을 기준으로 오름차순 정렬
+et = 0 # 진행한 회의가 끝나는 시간
+cnt = 0 # 가능한 회의의 개수 
+for s, e in meeting:
+    if s >= et:
+        et = e
         cnt += 1
 print(cnt)
